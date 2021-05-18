@@ -1,7 +1,12 @@
 https://www.jetbrains.com/help/idea/create-tests.html
 
+Unit Testing in JUnit:
 1. If there are no failures in a Junit test then it means test has succeeded / fast
 2. Function signature should be public void
 3. We should have one condition in a particular test
 3. assertEqual, both values should be same or else it fails
 4. We can pass in a String in every Assert function that will be printed as message if test fails
+5. @Before to execute something before running every test for ex. to initialize test data
+6. @After to execute something after executing every test for cleanup for ex. disconnect to DB
+7. @BeforeClass and @AfterClass if we want to do only once not after every test
+8. Both methods should be *static (ie. methods with these annotations)
