@@ -1,3 +1,4 @@
 https://www.jetbrains.com/help/idea/create-tests.html
 
 1. If there are no failures in a Junit test then it means test has succeeded / fast
+2. Function signature should be public void

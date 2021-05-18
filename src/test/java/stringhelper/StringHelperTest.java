@@ -8,18 +8,19 @@ public class StringHelperTest {
 
     StringHelper stringHelper=new StringHelper();
 
+    // AACD => CD  , ACD => CD , CDEF => CDEF  , CDAA => CDAA
+
+    // name_condition(in which are testing)
     @Test
-    public void truncateAInFirst2Positions() {
-
-        // AACD => CD  , ACD => CD , CDEF => CDEF  , CDAA => CDAA
-
+    public void testTruncateAInFirst2Positions_AInFirst2Positions() {
         // Expected, Actual
         assertEquals("CD",stringHelper.truncateAInFirst2Positions("AACD"));
+    }
+
+    @Test
+    // One condition should be checked per function
+    public void testTruncateAInFirst2Positions_AInFirstPosition(){
         assertEquals("CD",stringHelper.truncateAInFirst2Positions("ACD"));
-        assertEquals("CDEF",stringHelper.truncateAInFirst2Positions("CDEF"));
-        assertEquals("CDAA",stringHelper.truncateAInFirst2Positions("CDAA"));
-
-
     }
 
     @Test
