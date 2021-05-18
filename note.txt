@@ -12,4 +12,10 @@ Unit Testing in JUnit:
 8. Both methods should be *static (ie. methods with these annotations)
 9. For Objects/References like Array use assertArrayEquals
 10. Handling exceptions: @Test(expected = ExceptionClass.class)
-11. Check for performance @Test(timeout=timeInMiliseconds)
+11. Check for performance @Test(timeout=timeInMilliseconds)
+
+Parameterized Test:
+1. Add @RunWith(Parameterized.class) at top of the class
+2. Add a method annotated with @Parameters which returns a Collection which contains input and expected output
+3. input and expectedOutput are inserted into constructor of that class so we create a parameterized constructor
+4. Then we use it in our test function
