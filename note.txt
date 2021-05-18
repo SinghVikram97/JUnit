@@ -10,3 +10,6 @@ Unit Testing in JUnit:
 6. @After to execute something after executing every test for cleanup for ex. disconnect to DB
 7. @BeforeClass and @AfterClass if we want to do only once not after every test
 8. Both methods should be *static (ie. methods with these annotations)
+9. For Objects/References like Array use assertArrayEquals
+10. Handling exceptions: @Test(expected = ExceptionClass.class)
+11. Check for performance @Test(timeout=timeInMiliseconds)
