@@ -19,3 +19,8 @@ Parameterized Test:
 2. Add a method annotated with @Parameters which returns a Collection which contains input and expected output
 3. input and expectedOutput are inserted into constructor of that class so we create a parameterized constructor
 4. Then we use it in our test function
+5. It can only have 1 kind of test per class ie. areFirstAndLastTwoCharactersTheSame function would require another class if we are using parameterized test
+
+Organize JUnits into Suites:
+1. We can group tests -> group of tests known as Test suite
+2. @RunWith(Suite.class) and specify tests @SuiteClasses({TestClass.class})
